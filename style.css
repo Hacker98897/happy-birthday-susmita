@@ -1,1 +1,519 @@
+/* ===========================
+   Happy Birthday Susmita V2
+   Made by Hitesh ❤️
+=========================== */
 
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    scroll-behavior:smooth;
+}
+
+body{
+    font-family:'Poppins',sans-serif;
+    background:linear-gradient(135deg,#080810,#12042b,#2b063d);
+    color:#fff;
+    overflow-x:hidden;
+}
+
+/* Scrollbar */
+
+::-webkit-scrollbar{
+    width:8px;
+}
+
+::-webkit-scrollbar-thumb{
+    background:#ff4d88;
+    border-radius:20px;
+}
+
+/* Loader */
+
+#loader{
+    position:fixed;
+    inset:0;
+    background:#000;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    z-index:99999;
+}
+
+.loader-heart{
+    font-size:80px;
+    animation:heartbeat 1s infinite;
+}
+
+#loader h1{
+    margin-top:20px;
+    font-size:35px;
+}
+
+#loader p{
+    margin-top:10px;
+    color:#ccc;
+}
+
+@keyframes heartbeat{
+
+0%{transform:scale(1);}
+25%{transform:scale(1.2);}
+50%{transform:scale(1);}
+75%{transform:scale(1.25);}
+100%{transform:scale(1);}
+
+}
+
+/* Hero */
+
+.hero{
+
+height:100vh;
+
+background:url("assets/bg.jpg") center center/cover no-repeat;
+
+display:flex;
+
+justify-content:center;
+
+align-items:center;
+
+position:relative;
+
+}
+
+.hero::before{
+
+content:"";
+
+position:absolute;
+
+inset:0;
+
+background:rgba(0,0,0,.45);
+
+}
+
+/* Glass */
+
+.glass{
+
+position:relative;
+
+z-index:2;
+
+background:rgba(255,255,255,.12);
+
+backdrop-filter:blur(18px);
+
+padding:50px;
+
+border-radius:30px;
+
+width:90%;
+
+max-width:750px;
+
+text-align:center;
+
+box-shadow:0 10px 40px rgba(0,0,0,.45);
+
+}
+
+.glass h3{
+
+font-size:28px;
+
+color:#ffd54f;
+
+}
+
+.glass h1{
+
+font-family:"Great Vibes",cursive;
+
+font-size:85px;
+
+margin:15px 0;
+
+color:#ff7eb3;
+
+}
+
+.glass h2{
+
+font-size:28px;
+
+margin-bottom:20px;
+
+}
+
+.glass p{
+
+line-height:1.9;
+
+font-size:20px;
+
+color:#eee;
+
+}
+
+/* Button */
+
+.btn{
+
+display:inline-block;
+
+margin-top:35px;
+
+padding:16px 40px;
+
+background:#ff4d88;
+
+color:#fff;
+
+text-decoration:none;
+
+border-radius:40px;
+
+font-size:18px;
+
+transition:.4s;
+
+}
+
+.btn:hover{
+
+transform:translateY(-5px);
+
+box-shadow:0 0 25px #ff4d88;
+
+}
+
+/* Sections */
+
+section{
+
+padding:100px 10%;
+
+}
+
+section h2{
+
+text-align:center;
+
+font-size:45px;
+
+margin-bottom:60px;
+
+font-family:"Great Vibes",cursive;
+
+color:#ffd54f;
+
+}
+
+/* Love Letter */
+
+.letter{
+
+max-width:900px;
+
+margin:auto;
+
+background:rgba(255,255,255,.08);
+
+padding:45px;
+
+border-radius:25px;
+
+backdrop-filter:blur(12px);
+
+box-shadow:0 15px 35px rgba(0,0,0,.35);
+
+line-height:2;
+
+font-size:20px;
+
+}
+
+/* Timeline */
+
+.timeline{
+
+display:grid;
+
+grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+
+gap:30px;
+
+}
+
+.timeline-card{
+
+background:rgba(255,255,255,.08);
+
+padding:30px;
+
+border-radius:20px;
+
+text-align:center;
+
+transition:.4s;
+
+}
+
+.timeline-card:hover{
+
+transform:translateY(-10px);
+
+background:#ff4d88;
+
+}
+
+.timeline-card h3{
+
+margin-bottom:20px;
+
+color:#ffd54f;
+
+}
+/* ===========================
+   Gallery
+=========================== */
+
+.gallery{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    gap:25px;
+}
+
+.gallery img{
+    width:100%;
+    height:350px;
+    object-fit:cover;
+    border-radius:20px;
+    cursor:pointer;
+    transition:.5s;
+    box-shadow:0 10px 30px rgba(0,0,0,.4);
+}
+
+.gallery img:hover{
+    transform:scale(1.05) rotate(1deg);
+    box-shadow:0 15px 40px rgba(255,77,136,.5);
+}
+
+/* Love Counter */
+
+#counter{
+    text-align:center;
+}
+
+#loveTimer{
+    margin-top:20px;
+    font-size:35px;
+    color:#ff8db3;
+    font-weight:bold;
+}
+
+/* Cards */
+
+.cards{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+    gap:30px;
+}
+
+.card{
+    background:rgba(255,255,255,.08);
+    backdrop-filter:blur(15px);
+    padding:30px;
+    border-radius:20px;
+    text-align:center;
+    transition:.4s;
+}
+
+.card span{
+    font-size:45px;
+}
+
+.card h3{
+    margin:20px 0;
+    color:#ffd54f;
+}
+
+.card:hover{
+    transform:translateY(-10px);
+    background:#ff4d88;
+}
+
+/* Surprise */
+
+#surprise{
+    text-align:center;
+}
+
+#giftButton,
+#closeGift{
+    padding:15px 35px;
+    border:none;
+    border-radius:50px;
+    background:#ff4d88;
+    color:white;
+    font-size:18px;
+    cursor:pointer;
+    transition:.3s;
+}
+
+#giftButton:hover,
+#closeGift:hover{
+    transform:scale(1.08);
+    box-shadow:0 0 20px #ff4d88;
+}
+
+/* Modal */
+
+#giftModal{
+    position:fixed;
+    inset:0;
+    background:rgba(0,0,0,.85);
+    display:none;
+    justify-content:center;
+    align-items:center;
+    z-index:9999;
+}
+
+.giftContent{
+    width:90%;
+    max-width:700px;
+    background:#1b1028;
+    border-radius:25px;
+    padding:40px;
+    text-align:center;
+    box-shadow:0 0 40px rgba(255,77,136,.5);
+}
+
+.giftContent h1{
+    font-family:"Great Vibes",cursive;
+    font-size:55px;
+    color:#ffd54f;
+}
+
+.giftContent p{
+    margin:30px 0;
+    line-height:2;
+    font-size:20px;
+}
+
+/* Footer */
+
+footer{
+    text-align:center;
+    padding:60px 20px;
+    background:#090909;
+}
+
+footer h2{
+    font-family:"Great Vibes",cursive;
+    color:#ff7eb3;
+    font-size:45px;
+}
+
+footer p{
+    margin-top:10px;
+    color:#ccc;
+}
+
+/* Fireworks */
+
+#fireworksCanvas{
+    position:fixed;
+    inset:0;
+    pointer-events:none;
+    z-index:9998;
+}
+
+/* Floating Hearts */
+
+.heart{
+    position:fixed;
+    bottom:-50px;
+    font-size:22px;
+    animation:floatHeart linear forwards;
+    pointer-events:none;
+    z-index:9997;
+}
+
+@keyframes floatHeart{
+
+0%{
+transform:translateY(0) scale(.8);
+opacity:1;
+}
+
+100%{
+transform:translateY(-110vh) scale(1.5);
+opacity:0;
+}
+
+}
+
+/* Fade Animation */
+
+.fade{
+    opacity:0;
+    transform:translateY(50px);
+    transition:1s;
+}
+
+.fade.show{
+    opacity:1;
+    transform:translateY(0);
+}
+
+/* Responsive */
+
+@media(max-width:768px){
+
+.glass{
+padding:30px;
+}
+
+.glass h1{
+font-size:55px;
+}
+
+.glass p{
+font-size:16px;
+}
+
+section{
+padding:70px 25px;
+}
+
+section h2{
+font-size:34px;
+}
+
+.gallery img{
+height:260px;
+}
+
+.giftContent{
+padding:25px;
+}
+
+.giftContent h1{
+font-size:40px;
+}
+
+.giftContent p{
+font-size:17px;
+}
+
+#loveTimer{
+font-size:24px;
+}
+
+}
